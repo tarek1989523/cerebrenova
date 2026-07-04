@@ -29,7 +29,7 @@ export default function ProductGallery() {
           {images.map((img, i) => (
             <motion.div
               key={img.label}
-              className={`bg-white/60 backdrop-blur-xl border border-white/80 rounded-2xl p-3 shadow-xl shadow-[#0284c7]/5 transition-all duration-300 hover:shadow-2xl hover:shadow-[#0284c7]/10 hover:-translate-y-1 ${img.span ? "sm:col-span-2" : ""}`}
+              className="bg-white/60 backdrop-blur-xl border border-white/80 rounded-2xl p-3 shadow-xl shadow-[#0284c7]/5 transition-all duration-300 hover:shadow-2xl hover:shadow-[#0284c7]/10 hover:-translate-y-1"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
